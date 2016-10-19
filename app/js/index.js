@@ -1,9 +1,7 @@
-var $ = require('jquery');
-window.jQuery = $;
-window.$ = $;
-var flickity = require('./flickity.pkgd');
+var Flickity = require('./flickity.pkgd');
 
-$('.main-carousel').flickity({
+
+var flkty = new Flickity( '.main-carousel', {
   // options
   cellAlign: 'left',
   contain: true
